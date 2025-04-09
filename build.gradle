@@ -9,6 +9,14 @@ plugins {
 group = 'com.github.jjuni1115'
 version = '0.0.4'
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
