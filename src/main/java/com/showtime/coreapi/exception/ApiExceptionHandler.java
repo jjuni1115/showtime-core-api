@@ -35,7 +35,7 @@ ObjectMapper objectMapper = new ObjectMapper();
             throw new RuntimeException(ex);
         }
 
-        return ResponseEntity.status(e.status()).body(ApiResponse.error(response.getMessage(),response.getPath(),response.getMessage()));
+        return ResponseEntity.status(e.status()).body(ApiResponse.error(response.getMessage(),response.getPath(),response.getErrorCode()));
 
     }
 
