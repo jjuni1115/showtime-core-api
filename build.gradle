@@ -11,7 +11,7 @@ ext {
 }
 
 group = 'com.github.jjuni1115'
-version = '0.0.7'
+version = '0.0.8'
 
 publishing {
     publications {
